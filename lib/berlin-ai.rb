@@ -7,6 +7,7 @@ puts " __                  __ __             _______ _______ "
 puts "|  |--..-----..----.|  |__|.-----.    |   _   |_     _|"
 puts "|  _  ||  -__||   _||  |  ||     |    |       |_|   |_ "
 puts "|_____||_____||__|  |__|__||__|__|    |___|___|_______|"
+puts "Potloc-flavored"
 puts
 
 %w(game_internal game map_internal map node_internal node fake).each do |file|
@@ -15,6 +16,7 @@ end
 
 set :verbose, true
 set :logger, Logger.new(STDOUT)
+set :bind, '0.0.0.0'
 
 # set tests to false
 options = {}
