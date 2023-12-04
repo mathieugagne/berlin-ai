@@ -50,11 +50,11 @@ module Berlin
           # Update turn infos
           @current_turn = current_turn.to_i
           @turns_left   = @maximum_number_of_turns - @current_turn
-          
+
           # Update map state
           @map.update(state)
         end
-        
+
         def reset!
           @moves = []
           @map.nodes.each(&:reset!)
