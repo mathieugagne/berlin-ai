@@ -1,7 +1,7 @@
 require "net/http"
 require "uri"
 require 'rainbow'
-require 'terminfo'
+require 'json'
 
 module Berlin
   module Fake
@@ -166,7 +166,8 @@ module Berlin
         @state = state.state
         @player_ids = @state.map{ |id, n| n['player_id'] }.uniq.compact.sort
 
-        @height, @width = TermInfo.screen_size
+        @height = 48
+        @width = 130
         @height -= @player_ids.length + 1
         @map = 1.upto(@height).map { [" "] * @width }
       end
