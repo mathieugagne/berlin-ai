@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    berlin-ai (0.0.39)
+    berlin-ai (0.1.0)
       puma
       rackup
       rainbow (~> 1.1.4)
