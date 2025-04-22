@@ -1,3 +1,5 @@
+require 'json'
+
 module Berlin
   module AI
     class Game
